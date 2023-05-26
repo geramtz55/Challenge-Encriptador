@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encritdor-Gerardo</title>            
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <header class="logo">
+            <img src="Imagenes/Logo.png" alt="Logo Alura">
+        </header>
+        <main>
+            <section class="seccion1">
+                <div class="caja-texto">
+                    <textarea cols="30" rows="9" class="area-texto" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="informacion">
+                    <h1>Solo letras minusculas y sin acentos</h1>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="seccion2">
+                <div>
+                    <img src="Imagenes/Muñeco.png" alt="muñeco" class="muñeco">
+                </div>
+                <div class="mensaje">
+                    <p class="texto">Ningun mensaje fue encontrado</p>
+                    <!-- <textarea class="resultado" rows="1" cols="10" placeholder=""></textarea> -->
+                </div>
+                <div>
+                  <textarea 
+                 rows="10" class="resultado"></textarea>  
+                </div>
+                <div>
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+                
+            </section>
+        </main>
+        <script src="Script.js"></script>
+    </body>
+</html>
